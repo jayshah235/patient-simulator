@@ -45,6 +45,7 @@ const PatientSimulator = () => {
                 image={s?.image}
                 initial={s?.initial}
                 animate={s?.animate}
+                loadingSrc={s?.loadingSrc}
               >
                 {s?.dots?.length &&
                   s?.dots?.map((x, index) => (
@@ -95,7 +96,7 @@ const PatientSimulator = () => {
             </div>
           </div>
           <div className={cn(styles.patientAnalysis)}>
-            <div className={cn(styles.analysisDetails, styles.hg_80)}>
+            <div className={cn(styles.analysisDetails)}>
               <div className={styles.simulationDetails}>
                 <p>Ecg</p>
               </div>

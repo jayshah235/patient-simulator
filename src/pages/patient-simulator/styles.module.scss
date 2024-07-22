@@ -130,9 +130,9 @@
   left: 2%;
 }
 
-.hg_80 {
-  height: 80px;
-}
+// .hg_95 {
+//   height: 95px;
+// }
 
 .threeDotsIcon {
   position: fixed;
@@ -200,31 +200,20 @@
 
 .heartRate {
   position: relative;
-  svg {
-    width: 100%;
-    height: 50px;
-  }
+  // animation: fade 2s infinite;
 }
 
-.femaleHeartDot {
-  top: 48%;
-  left: 50%;
-}
-
-.femaleLungsDot {
-  top: 44%;
-  left: 42%;
-}
-
-.femaleLiverDot {
-  top: 52%;
-  left: 45%;
-}
-
-.femaleStomachDot {
-  top: 65%;
-  left: 46.4%;
-}
+// @keyframes fade {
+//   0% {
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }
 
 .glowingAnimation {
   animation: blink-border-animation-large 1.5s infinite;

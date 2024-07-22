@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { EyeIcon } from "../../components/svg-icons";
 import styles from "./styles.module.scss";
+import Image from "../../components/image";
+import placholderImage from "../../assests/placeholder-images/tablePlaceholderImage.webp";
 
 export const HeaderData = [
   {
@@ -10,7 +12,11 @@ export const HeaderData = [
       return (
         <div className={styles.inlineItems}>
           <figure className={styles.patientImage}>
-            <img src={rowData.patientImage} alt="" />
+            <Image
+              loadingSrc={placholderImage}
+              src={rowData.patientImage}
+              alt=""
+            />
           </figure>
           <div className={styles.patientName}>
             <p>{rowData.name}</p>

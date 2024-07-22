@@ -1,5 +1,6 @@
 import * as icons from "../../components/svg-icons";
 import { SimulationImage } from "../../constants/images";
+import { PlaceHolderImage } from "../../constants/placeholderImages";
 
 export const PatientViews = [
   {
@@ -59,6 +60,7 @@ export const MalePatientImageRenderer = [
     image: SimulationImage.maleHalf,
     initial: { scale: 1.5 },
     animate: { scale: 1 },
+    loadingSrc: PlaceHolderImage.malePatienthalf,
     dots: [
       {
         style: {
@@ -93,24 +95,28 @@ export const MalePatientImageRenderer = [
   {
     type: "full",
     image: SimulationImage.maleFull,
+    loadingSrc: PlaceHolderImage.malePatientFull,
     initial: { scale: 1.5 },
     animate: { scale: 1 },
   },
   {
     type: "legs",
     image: SimulationImage.maleLegs,
+    loadingSrc: PlaceHolderImage.maleLegs,
     initial: { y: -100 },
     animate: { y: 0 },
   },
   {
     type: "face",
     image: SimulationImage.maleFace,
+    loadingSrc: PlaceHolderImage.maleFace,
     initial: { y: 100 },
     animate: { y: 0 },
   },
   {
     type: "back",
     image: SimulationImage.maleBack,
+    loadingSrc: PlaceHolderImage.maleBack,
     initial: { scale: 1.5 },
     animate: { scale: 1 },
     dots: [
@@ -126,6 +132,7 @@ export const MalePatientImageRenderer = [
   {
     type: "standingFront",
     image: SimulationImage.maleStandingFront,
+    loadingSrc: PlaceHolderImage.maleStandingFront,
     initial: { scale: 1.5 },
     animate: { scale: 1 },
     dots: [
@@ -162,6 +169,7 @@ export const MalePatientImageRenderer = [
   {
     type: "settingBack",
     image: SimulationImage.maleSettingBack,
+    loadingSrc: PlaceHolderImage.maleSettingBack,
     initial: { scale: 1.5 },
     animate: { scale: 1 },
     dots: [
@@ -177,6 +185,7 @@ export const MalePatientImageRenderer = [
   {
     type: "settingFront",
     image: SimulationImage.maleSettingFront,
+    loadingSrc: PlaceHolderImage.maleSettingFront,
     initial: { scale: 1.5 },
     animate: { scale: 1 },
     dots: [

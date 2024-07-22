@@ -1,10 +1,9 @@
 import { forwardRef, memo, useEffect, useRef, useState } from "react";
-import loadingImage from "../../assests/images/placeholder-blur.jpg";
 import styles from "./style.module.scss";
 
 const Image = forwardRef((props, ref) => {
   const {
-    loadingSrc = loadingImage,
+    loadingSrc,
     src,
     className,
     placeHolderStyle,

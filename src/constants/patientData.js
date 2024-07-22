@@ -1,3 +1,6 @@
+import maleImage from "../assests/table-images/male.webp";
+import femaleImage from "../assests/table-images/female.webp";
+
 export const patientsData = [
   {
     name: "Adam Berrada",
@@ -5,8 +8,7 @@ export const patientsData = [
     years: 50,
     weight: 65,
     height: 185,
-    patientImage:
-      "https://s3-alpha-sig.figma.com/img/eb09/ae08/c6f190515d005cef2ea79c04d9249e00?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lWhYfBvLyQteaYEWQTAMFJAd0LxLX9LviDBKTPGwdMYL2P-IbhNxoi-7Nv~snaqgjQDztz-JKV0tWLG81Egzuu8TCTu2k4fo71ReF83-DBV2vhuh3ycOVrZc67Lna3N6w7RkA1xI7nR0W-etriA5zWD37mVF042fEd2NuKJMq1hbuIxrXRkigQWrwXY67b2i91MvCv39mzVRj8N8KD0~p0H0DkqW9sapylu1XJOW~WkoO4I19ikCCealoZpQ7-yq1wt9oLbFeyV5WfxQgJ1IxnhLIloh388iLWTPfxjxQyvobTz~BII~6XFij2vww6y9HC58kiyZhe2Bx-CXyChJ3g__",
+    patientImage: maleImage,
     roleId: "#01",
     id: 1,
     bmi: "24.3",
@@ -21,8 +23,7 @@ export const patientsData = [
     years: 23,
     weight: 56,
     height: 174,
-    patientImage:
-      "https://s3-alpha-sig.figma.com/img/4eca/0063/6ffe4b2fea608ae0742270ab7f3ad1eb?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=o3puspPjAHEBuAPUCXF7OkL82jZtJaMhbte-kyJCfXNQ5MJ9~c35fo~d7roaW76zQX6iNfwjWYCHJbtYak6gbCl5Ued~HgavXjhILzRWJgfa4QPaQ09A5Elexms02f4xw~Qwqv4kkdyzQMKHXOw2onZtkq1cD6JtL4yirBTA-gB0kybNTYI6OjTr0ZVLk-hCIzISLnZGg0OEVHE2t1pnFj8CHWM5fTF9Tqv87gEzVVCURcMcZS4VjIkvTmb5P7rIfrNQKvTXaE72nGLB26qAdbc62KDGHqmWDWI9GbITfMKBNk9Hbl3GT6qdJBYVstYLalYjQXf9r-uHXAbmyy4hvg__",
+    patientImage: femaleImage,
     roleId: "#02",
     id: 2,
     bmi: "20.3",
@@ -56,7 +57,7 @@ export const patientsData = [
     patientImage:
       "https://s3-alpha-sig.figma.com/img/9266/21d3/8f86500e8c4ddb43dc55a4574a6202d7?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HF~7qN37-MpvMQ8k1YaaHe5XYkh0~D9NdcUINAY-Skn65wseMQ0PtrDgmI~2uAWTPDrVGR~g0awbfSZeEFEOkYhzErLcNJt1DsXU5fwLJsGB4Cpo0VlkpV~ooKgWbYF8e4FIMh8DBgYT6Dlw79AAQmmVMjNKhX~llaN4QF5Ah40hVvj66DKV-rk59d50wsEcBgaH5qW7PwlXHrC5VbR1m7qQAXBiOVVf2l-2aUiWEVUUIk-9IenNqeIlJhPq9GUnVO9vxSmnDIgY8nd5flxur~KIP4MbYGCtp2EjyTL8hxUx0fkkWzsWxyy4lSEnJGNOSXcnbSL1ZrjpTGtO5Gcpsg__",
     roleId: "#04",
-    id: 3,
+    id: 4,
     bmi: "24.3",
     level: "Intermediate",
     email: "adam.berrada@gmail.com",

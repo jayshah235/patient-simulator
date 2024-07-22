@@ -1,33 +1,16 @@
-import { Link, Outlet, useLocation } from "react-router-dom";
-import logo from "../../assests/images/logo.png";
-import { menuData } from "./data";
-import cn from "classnames";
+import { Outlet } from "react-router-dom";
+import { lazy, Suspense } from "react";
+import Skeleton from "../../components/skeleton-loader";
 import styles from "./styles.module.scss";
 
+const LazyLoadHeader = lazy(() => import("../../components/header"));
+
 const MainLayout = () => {
-  const location = useLocation()?.pathname;
   return (
     <main className={styles.container}>
-      <header className={styles.headerContainer}>
-        <Link to="/home">
-          <img src={logo} alt="logo" />
-        </Link>
-        <ul className={styles.menuList}>
-          {menuData?.map((s, index) => (
-            <li key={index}>
-              <Link
-                className={cn(
-                  styles.menuItems,
-                  s?.routes === location && styles.active
-                )}
-                to={s.routes}
-              >
-                {s.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </header>
+      <Suspense fallback={<Skeleton height="99px" />}>
+        <LazyLoadHeader />
+      </Suspense>
       <Outlet />
     </main>
   );

@@ -23,8 +23,8 @@ const StartSimulationModal = ({ data }) => {
         label="Start"
         className={styles.btn}
         onClick={() => {
-          navigate(`/simulation/${data?.type?.toLowerCase()}`);
           closeModal(startSimulationModalKey);
+          navigate(`/simulation/${data?.type?.toLowerCase()}`);
         }}
       />
     </>

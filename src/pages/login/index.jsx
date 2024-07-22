@@ -1,5 +1,6 @@
 import Image from "../../components/image";
 import LoginImage from "../../assests/images/loginImage.png";
+import LoginPlaceholderImage from "../../assests/placeholder-images/loginPlaceholderImage.jpeg";
 import { Input } from "../../components/form/input";
 import Button from "../../components/button";
 import { useForm } from "react-hook-form";
@@ -20,7 +21,7 @@ const Login = () => {
   return (
     <main className={styles.mainContainer}>
       <figure>
-        <Image src={LoginImage} />
+        <Image loadingSrc={LoginPlaceholderImage} src={LoginImage} />
       </figure>
       <section className={styles.loginContainer}>
         <h4 className={styles.title}>Sign In to your Account</h4>
