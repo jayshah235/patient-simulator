@@ -1,0 +1,19 @@
+@mixin font($fontSize: 1rem, $fontWeight: 300, $color: black) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $color;
+}
+
+@mixin gridColumn($columns: 2) {
+  display: grid;
+  grid-template-columns: repeat($columns, minmax(50px, 1fr));
+  grid-gap: 1rem;
+
+  @media (max-width: 880px) {
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+  }
+}

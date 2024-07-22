@@ -1,0 +1,247 @@
+.patientImage {
+  margin: auto;
+  max-width: 100vw;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.box {
+  position: relative;
+}
+
+.dots {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  border: 1px solid aqua;
+  cursor: pointer;
+  animation: blink-border-animation 2s infinite;
+  box-shadow: 0 0 5px aqua;
+  transition: box-shadow 0.4s ease;
+}
+
+@keyframes blink-border-animation {
+  0%,
+  49.9% {
+    border-color: transparent;
+  }
+  50%,
+  100% {
+    border-color: aqua;
+  }
+}
+
+.halfBtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.viewSections {
+  position: fixed;
+  bottom: 4%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.changeType {
+  display: flex;
+  gap: 10px;
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 116.97px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.checkAnalysis {
+  display: flex;
+  gap: 10px;
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 116.97px;
+  padding: 10px;
+}
+
+.checkRecords {
+  display: flex;
+  gap: 10px;
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 116.97px;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.imageContainer {
+  height: 100%;
+}
+
+.heartImage {
+  width: 30%;
+  margin: auto;
+  height: 100%;
+  align-content: center;
+}
+
+.image {
+  width: 50%;
+  margin: auto;
+  height: 100%;
+  align-content: center;
+}
+
+.patientAnalysis {
+  background: rgba(0, 0, 0, 0.6);
+  width: 200px;
+  border-radius: 15px;
+  // max-height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.analysisDetails {
+  margin: 10px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px 20px;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.hg_180 {
+  max-height: 180px;
+}
+
+.analysisWrapper {
+  position: fixed;
+  top: 18%;
+  left: 2%;
+}
+
+.hg_80 {
+  height: 80px;
+}
+
+.threeDotsIcon {
+  position: fixed;
+  top: 4%;
+  left: 2%;
+}
+
+.timeIcon {
+  position: fixed;
+  top: 2%;
+  left: 45%;
+}
+
+.deleteIcon {
+  position: fixed;
+  right: 2%;
+  top: 4%;
+}
+
+.iconsContainer {
+  display: flex;
+  gap: 10px;
+  margin-block: 15px;
+  justify-content: space-between;
+}
+
+.iconContainer {
+  width: 30px;
+  height: 30px;
+  background: #fefefe;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(221, 250, 253, 1);
+  }
+
+  svg {
+    height: 25px;
+  }
+}
+
+.simulationDetails {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-size: 10px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    margin-block: 10px;
+  }
+}
+
+.assessmentIcon {
+  position: fixed;
+  top: 70%;
+  right: 0;
+  margin-right: 20px;
+}
+
+.heartRate {
+  position: relative;
+  svg {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+.femaleHeartDot {
+  top: 48%;
+  left: 50%;
+}
+
+.femaleLungsDot {
+  top: 44%;
+  left: 42%;
+}
+
+.femaleLiverDot {
+  top: 52%;
+  left: 45%;
+}
+
+.femaleStomachDot {
+  top: 65%;
+  left: 46.4%;
+}
+
+.glowingAnimation {
+  animation: blink-border-animation-large 1.5s infinite;
+  box-shadow: 0 0 10px aqua;
+}
+
+@keyframes blink-border-animation-large {
+  0% {
+    border-color: aqua;
+    box-shadow: 0 0 10px aqua;
+  }
+  50% {
+    border-color: transparent;
+    box-shadow: 0 0 40px aqua;
+  }
+  100% {
+    border-color: aqua;
+    box-shadow: 0 0 10px aqua;
+  }
+}

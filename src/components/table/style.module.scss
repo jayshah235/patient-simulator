@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.table {
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.tableHeading {
+  padding: 0 0 15px 12px;
+  @include font(12px, 500, #959595);
+  border-bottom: 1px dashed #959595;
+}
+
+.tableBodyRow {
+  @include font(14px, 400, #959595);
+  padding: 8px;
+
+  td {
+    padding: 0 12px;
+    height: 47px;
+  }
+}
+
+.tableBodyRow {
+  background: #fff;
+  height: 70px;
+  td {
+    border-bottom: 1px dashed #959595;
+  }
+}
+
+.tableBodyRow:last-child {
+  td {
+    border-bottom: none;
+  }
+}
+
+.noReordFoundText {
+  text-align: center;
+  padding-top: 15px;
+  color: #959595;
+}

@@ -1,0 +1,53 @@
+@import "../../styles/variables";
+
+.tableHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  @include font(16px, 600, #282828);
+  margin: 0;
+}
+
+.subTitle {
+  @include font(12px, 500, #8b8d95);
+  margin-top: 6px;
+}
+
+.bgColor {
+  background: #f9f9f9 !important;
+  color: #78829d !important;
+}
+
+.inlineItems {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.patientName {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  p {
+    margin: 0;
+    @include font(14px, 500);
+  }
+
+  p:nth-child(2) {
+    color: #959595;
+  }
+}
+
+.patientImage {
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  img {
+    border-radius: 50%;
+  }
+}

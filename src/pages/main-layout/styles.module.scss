@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  align-items: center;
+}
+
+.menuList {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.menuItems {
+  @include font(16px, 600, #282828);
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 16px;
+}
+
+.active {
+  background: #ddfafd;
+  color: #30bdcb;
+  border-radius: 6px;
+}

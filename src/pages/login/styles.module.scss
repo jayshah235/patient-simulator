@@ -1,0 +1,57 @@
+@import "../../styles/variables";
+
+.mainContainer {
+  position: relative;
+}
+
+.loginContainer {
+  position: absolute;
+  left: 54%;
+  top: 23%;
+  padding: 20px 10px;
+  border-radius: 20px;
+  width: 22%;
+  height: 300px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  align-content: center;
+}
+
+.title {
+  margin-block: 5px;
+  @include font(20px, 700, #32271d);
+}
+
+.subTitle {
+  @include font(12px, 500, rgba(92, 92, 92, 1));
+  margin: 0;
+}
+
+.formContainer {
+  width: 75%;
+  margin: auto;
+  margin-block: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.passwordInput {
+  width: 100%;
+}
+
+.forgotPasswordLink {
+  margin-block: 0;
+  text-align: right;
+  @include font(12px, 500, #343434);
+  text-decoration: none;
+}
+
+.mt_10 {
+  margin: 10px 0 5px 0;
+}
+
+.signInButton {
+  margin-top: 20px;
+}
